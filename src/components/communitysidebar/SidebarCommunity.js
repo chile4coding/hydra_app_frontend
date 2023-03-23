@@ -1,0 +1,54 @@
+import React from "react";
+import SidebarCommunityLayout from "./SidebarCommunityLayout";
+import avatar from "../../images/avatar.png";
+import man from "../../images/man.jpg";
+
+function CommunitiesAvatar() {
+  return (
+    <div
+      style={{
+        width: "15px",
+        height: "15px",
+
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        borderRadius: "50%",
+
+        backgroundImage: `url(${man})`,
+      }}></div>
+  );
+}
+
+function Communities() {
+  return (
+    <div className="d-flex gap-3 my-3">
+      <div
+        style={{
+          width: "74px",
+          height: "74px",
+          backgroundImage: `url(${man})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}></div>
+      <div style={{ padding: "0px", margin: "0px" }}>
+        <p style={{ padding: "0px", margin: "4px" }}>Web3 Africa</p>
+        <p style={{ padding: "0px", margin: "0px" }}>1,1613 members</p>
+        <div className="d-flex position-relative ">
+          <CommunitiesAvatar />
+          <CommunitiesAvatar />
+          <CommunitiesAvatar />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function SidebarCommunity() {
+  return (
+    <SidebarCommunityLayout header="My Communities" footer="see all">
+      <Communities />
+      <Communities />
+      <Communities />
+    </SidebarCommunityLayout>
+  );
+}

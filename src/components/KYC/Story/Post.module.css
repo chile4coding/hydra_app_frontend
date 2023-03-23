@@ -1,0 +1,57 @@
+.user__profile{
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.username__text{
+    padding: 0;
+    margin: 0 5px;
+}
+.posts__img{
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.card_desc{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.KYC__text{
+    font-family: Lato;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+
+
+@media (max-width: 767px) {
+    
+    .KYC__text{
+        font-size:15px;
+       
+    }
+    .KYC__inner-text{
+        font-size:4px;
+        gap: 0.5rem!important;
+     
+    }
+}
