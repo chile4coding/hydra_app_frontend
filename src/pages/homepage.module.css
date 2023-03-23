@@ -25,6 +25,26 @@ border-radius: 8px;
 }
 /*  */
 
+@media (max-width: 991px ) {
+    .mini__view{
+        display: none;
+        padding: 0;
+   
+    }
+    .container__width{
+        max-width: 100% !important;
+        padding: 0;
+        margin-left: 0 !important;
+        padding: 0 !important;
+      
+       }
+       .mini__width{
+        padding: 0 !important;
+        margin: 0 !important;
+     
+       }
+    
+}
 @media (max-width: 767px) {
    .mobile__display{
     display: none;

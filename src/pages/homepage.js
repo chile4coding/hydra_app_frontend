@@ -46,13 +46,13 @@ export default function Homepage() {
           </Row>
         </Container>
       </div>
-      <div>
+      <div className={classes['container__width']}>
 
      
       <Container  className={classes['container__width']}>
         <Row  >
           
-          <Col md={3} className={classes['mobile__display']}>
+          <Col md={5} lg={3} className={classes['mobile__display']}>
             <Row >
               <Col md={12}>
                 <HomeSidebar />
@@ -65,7 +65,7 @@ export default function Homepage() {
           </Col>
 
 
-          <Col md={6}  >
+          <Col md={7} lg={6} >
             <Row >
               <Col md={12} >
                 {
@@ -84,7 +84,7 @@ export default function Homepage() {
               </Col>
             </Row>
           </Col>
-          <Col md={3} className={classes['mobile__display']}>
+          <Col md={3} lg={3}  className={`${classes['mobile__display']} ${classes['mini__view']}`}>
             <ProfileLoader />
             <SidebarCommunity />
             <SidebarSujestions />
