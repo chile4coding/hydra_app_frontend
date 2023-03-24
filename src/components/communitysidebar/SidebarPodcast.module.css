@@ -1,0 +1,40 @@
+.live__component{
+
+    font-family: Lato;
+font-size: 12px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #14171F;
+margin: 0 !important;
+padding:  1px 16px  ;
+border-width: 0;
+
+}
+
+.gain__follower{
+
+    padding: 8px 8px;
+    font-family: Lato;
+font-size: 16px;
+font-weight: 800;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+margin: 0 !important;
+
+
+
+
+}
+.entertainment__text{
+    
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}

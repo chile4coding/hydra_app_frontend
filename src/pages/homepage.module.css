@@ -1,91 +1,70 @@
 .status{
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+text-align: center;
+padding: 8px;
+border-radius: 8px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.web__status{
+
+    background: linear-gradient(90deg, rgba(44, 115, 210, 0.75) 1.15%, rgba(132, 94, 194, 0.75) 94.84%);
+
+}
+
+
+.mobile__view{
+  display: none;
+}
+.home__page-bg{
+
+    background: #F3F3F4;
+    max-width: 100%;
+
+
+}
+
+.reels_bg{
+    background-color: white;
+    margin: 0 ;
+
+    max-width: 100%;
+}
+
+.web__status{
     font-family: Lato;
 font-size: 14px;
 font-weight: 700;
 line-height: 17px;
 letter-spacing: 0em;
 text-align: left;
-background: linear-gradient(90deg, rgba(44, 115, 210, 0.75) 1.15%, rgba(132, 94, 194, 0.75) 94.84%);
-color: white;
-text-align: center;
-padding: 8px;
-border-radius: 8px;
-
-}
-
-.home__page-bg{
-
-    background: #F3F3F4;
+color: #FFFFFF;
+border-radius: 20px;
 
 
 }
-.reels_bg{
-    background-color: white;
-    margin: 0 1rem;
-}
-/*  */
 
-@media (max-width: 991px ) {
-    .mini__view{
-        display: none;
-        padding: 0;
-   
+
+@media (max-width: 767px){
+    .mobile__view{
+        display: block;
     }
-    .container__width{
-        max-width: 100% !important;
-        padding: 0;
-        margin-left: 0 !important;
-        padding: 0 !important;
-      
-       }
-       .mini__width{
-        padding: 0 !important;
-        margin: 0 !important;
-     
-       }
-    
-}
-@media (max-width: 767px) {
-   .mobile__display{
-    display: none;
-    padding: 0;
-    margin: 0;
-}
-.mobil_status{
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-   
-    color: white;
-    text-align: center;
-    padding: 8px;
-    border-radius: 8px;
-    background: #43454C;
-
-
-}
-.reels__story-bg{
-    background: #727479;
-    
-   }
-   
-   .reels_bg{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-   }
-   .container__width{
-    width: 100%;
-    padding: 0;
-   }
-   .border
-      {
-        border:0px solid !important
-        }
-   .status{
- 
-   }
-        
+    .web__status{
+        display: none;
+    }
 }

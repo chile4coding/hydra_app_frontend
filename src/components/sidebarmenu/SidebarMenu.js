@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import home from "../../icons/home.png";
 import communityIcon from "../../icons/community.png";

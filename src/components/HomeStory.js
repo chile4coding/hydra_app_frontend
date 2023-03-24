@@ -79,9 +79,7 @@ function HomeStory() {
         <Stories avatar={avatar3}/>
         <Stories avatar={avatar4}/>
       </Card.Body>
-{
-  mobile && <KYCStatus mobile={true}/>
-}
+  <KYCStatus bg='#43454C'/>
       
     </Card>
   );

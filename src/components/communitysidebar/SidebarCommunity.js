@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import SidebarCommunityLayout from "./SidebarCommunityLayout";
 import avatar from "../../images/avatar.png";
 import man from "../../images/man.jpg";
+import { LiveEventLoader } from "../ProfileLoader";
+import { MyCommunityLoader } from "../ProfileLoader";
+import KYCNotification from "../KYC/KYCNotification";
 
 function CommunitiesAvatar() {
   return (
@@ -21,7 +24,7 @@ function CommunitiesAvatar() {
 
 function Communities() {
   return (
-    <div className="d-flex gap-3 my-3">
+    <div className="d-flex gap-3 my-3 px-3">
       <div
         style={{
           width: "74px",
@@ -44,11 +47,21 @@ function Communities() {
 }
 
 export default function SidebarCommunity() {
+  const [loading, setLoding] = useState(true);
   return (
-    <SidebarCommunityLayout header="My Communities" footer="see all">
-      <Communities />
-      <Communities />
-      <Communities />
+    <SidebarCommunityLayout
+      header="My Communities"
+      footer="see all"
+      loading={loading}>
+      {loading ? (
+        <>
+          <MyCommunityLoader /> <KYCNotification />
+        </>
+      ) : (
+        <Communities />
+      )}
+      {loading ? <MyCommunityLoader /> : <Communities />}
+      {loading ? <MyCommunityLoader /> : <Communities />}
     </SidebarCommunityLayout>
   );
 }

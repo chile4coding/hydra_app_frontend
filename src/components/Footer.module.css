@@ -6,5 +6,7 @@ font-size: 14px;
 .foorter__item{
     display: flex;
     justify-content: space-around;
+    
+
 
 }
