@@ -79,7 +79,6 @@ import HomeStory from "../components/HomeStory";
 import Stories from "../components/Stories";
 import ProfileLoader from "../components/ProfileLoader";
 import classes from "./AppLayout.module.css";
-import KYCNotification from "../components/KYC/KYCNotification";
 import Post from "../components/KYC/Story/Post";
 import HomeFooter from "../components/HomeFooter";
 import SidebarMenu from "../components/sidebarmenu/SidebarMenu";
@@ -89,7 +88,6 @@ import user3 from "../images/user3.png";
 import SidebarCommunity from "../components/communitysidebar/SidebarCommunity";
 import SidebarSujestions from "../components/communitysidebar/SidebarSujestions";
 import SidebarPodCast from "../components/communitysidebar/SidebarPodCast";
-
 
 function AppLayout({ children }) {
   return (
@@ -101,18 +99,19 @@ function AppLayout({ children }) {
           </Row>
         </Container>
       </div>
-      <div className={`${classes["container__width"]} ${classes["set__bg"]}`}>
+      <div className={`${classes["container__width"]} ${classes["set__bg"]} `}>
         <Container className={classes["container__width"]}>
           <Row>
             <Col md={5} lg={3} className={classes["mobile__display"]}>
               <Row>
                 <Col md={12}>
                   <HomeSidebar />
+                  
+                  <Stories>
+                    <SidebarMenu />
+                  </Stories>
                 </Col>
-                <Col md={12}>
-                  <Stories sidebar={true} />
-                  <SidebarMenu />
-                </Col>
+                <Col md={12}></Col>
               </Row>
             </Col>
 

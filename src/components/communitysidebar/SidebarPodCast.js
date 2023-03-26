@@ -122,7 +122,7 @@ function ShowPodCasters({ details }) {
   );
 }
 export default function SidebarPodCast() {
-  const [loading, setloading] = useState(true);
+  const [loading, setloading] = useState(false);
   return (
     <SidebarCommunityLayout header="My Podcast" footer="See all" loading={loading}>
       {loading ? (

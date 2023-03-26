@@ -13,6 +13,8 @@ import podcastIcon from "../icons/podcast.png";
 import messageIcon from "../icons/message.png";
 import notificationIcon from "../icons/notification.png";
 import burgerIcon from '../icons/burger.png'
+import MobileOffcanvas from "./MobileDraw/MobileOffconvas";
+
 
 
 
@@ -20,6 +22,7 @@ function HomeNavbar() {
   const [input, setInput] = useState({
     searchInput: "",
     show: true,
+    toggle: false
   });
 
   const [kyc, setKyc] = useState(true);
@@ -31,11 +34,18 @@ function HomeNavbar() {
       setInput({ ...input, [name]: value, show: true });
     }
   }
+  function handleToggle(show){
+    setInput({...input, toggle: show})
+  }
   return (
     <div className="d-flex justify-content-between gap-4 align-items-center my-4 border-sm-0">
       <div className=" " md={kyc ? 2 : 3} sm={4}>
         <div className="d-flex align-items-baseline ">
-          <i><img src={burgerIcon} className={classes['hand__burger_icon']}/></i>
+          <i><img src={burgerIcon} className={classes['hand__burger_icon']} onClick={handleToggle.bind(this, true)}/></i>
+          {
+            input.toggle && <MobileOffcanvas handleToggle={handleToggle}/>
+          }
+          
           <i className={classes["home__icon-holder"]}>
             <img
               src={hydraLogo}
@@ -51,7 +61,7 @@ function HomeNavbar() {
         className={`${classes["search__visibility"]} lg-5 position-relative`}
         md={kyc ? 5 : 6}
         style={{ flexGrow: "4" }}>
-          <form>
+          <form autocomplete="on">
         <div className=" ">
           {input.show && (
             <img src={searchIcon} className={classes["home__search-icon"]} />
@@ -63,6 +73,7 @@ function HomeNavbar() {
             name="searchInput"
             onChange={handleInput}
             value={input.searchInput}
+            autocomplete="on"
           />
         </div>
         </form>

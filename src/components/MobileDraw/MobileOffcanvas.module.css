@@ -1,0 +1,47 @@
+.mobile__offcanvas-topography{
+    font-family: Lato;
+font-size: 12px;
+font-weight: 600;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.balance{
+font-family: Lato;
+font-size: 14px;
+font-weight: 800;
+line-height: 20px;
+letter-spacing: 0.01em;
+text-align: left;
+
+}
+.remaining__balance{
+    font-family: Lato;
+font-size: 10px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.01em;
+text-align: left;
+}
+.followers{
+font-family: Lato;
+font-size: 12px;
+font-weight: 800;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+padding: 0 0.3rem;
+
+}
+
+.animate{
+    transition-delay: 3s;
+}
+.accordion__style{
+    border: none !important;
+    background-color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: white;
+}

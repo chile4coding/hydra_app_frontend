@@ -9,6 +9,7 @@ import user2 from "../images/user2.png";
 import user3 from "../images/user3.png";
 import { ModalButton } from "../components/KYC/KYCModal";
 import AppLayout from "./AppLayout";
+import StatusInput from "../components/StatusInput/StatusInput";
 
 export function KYCStatus(props) {
   return (
@@ -56,6 +57,9 @@ export default function Homepage() {
         <Col md={12}><KYCStatusWeb/></Col>
         <Col md={12}>
           <HomeStory />
+        </Col>
+        <Col md={12}>
+          <StatusInput/>
         </Col>
         <Col md={12}>
           <Post img={user1} />

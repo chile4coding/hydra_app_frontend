@@ -56,7 +56,7 @@ function Suggestions (){
 }
 
 export default function SidebarSujestions() {
-  const  [loading, setloading ]= useState(true)
+  const  [loading, setloading ]= useState(false)
   return (
     <SidebarCommunityLayout header="Suggested followers" footer="Show more" loading={loading}>
     

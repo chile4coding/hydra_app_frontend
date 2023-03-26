@@ -1,0 +1,41 @@
+.card__display--desktop{
+    display: flex !important;
+    
+}
+
+.form__style{
+    outline: none;
+}
+
+.button__style{
+    background: linear-gradient(90deg, rgba(44, 115, 210, 0.54) 1.15%, rgba(132, 94, 194, 0.75) 94.84%);
+border-radius: 24px;
+border: none;
+padding: 16px o;
+}
+.text__format{
+    font-family: Lato;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.show__mobile{
+    gap: 2rem;
+}
+
+@media (max-width: 767px ) {
+    .mobile__view{
+        display: none;
+        
+   
+    }
+    .show__mobile{
+        justify-content: space-between;
+    
+        gap: 1rem;
+        width: 100%;
+    }
+}
