@@ -14,6 +14,8 @@ import messageIcon from "../icons/message.png";
 import notificationIcon from "../icons/notification.png";
 import burgerIcon from '../icons/burger.png'
 import MobileOffcanvas from "./MobileDraw/MobileOffconvas";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -46,13 +48,13 @@ function HomeNavbar() {
             input.toggle && <MobileOffcanvas handleToggle={handleToggle}/>
           }
           
-          <i className={classes["home__icon-holder"]}>
+          <Link to='/'><i className={classes["home__icon-holder"]}>
             <img
               src={hydraLogo}
               alt="Hyra Logo"
               className={classes["home__icon"]}
             />
-          </i>
+          </i></Link>
           <p className={classes["home__navtext"]}>0.00000 ~ 0.0H/h </p>
         </div>
       </div>
@@ -128,13 +130,14 @@ function HomeNavbar() {
           </span>
           <div
             className={` ${classes["search__visibility"]} ${classes["meIcon__visibility"]} ${classes["show__tilte"]}`}>
-            <span className={classes["show__tilte"]}>Me</span>
+            <Link to="/me"><p className={classes["show__tilte"]}>Me</p></Link>
             <span className={classes["show__tilte"]}>
               <img
                 src={dropdownIcon}
                 alt="Hyra Logo"
                 className={classes["home__icon"]}
               />
+             
             </span>
           </div>
         </span>
