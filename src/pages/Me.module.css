@@ -1,0 +1,209 @@
+.card-top{
+    margin-left: 20px;
+    margin-bottom: 100px;
+   
+}
+
+.col-md-5{
+    background-color: rgb(137, 136, 136);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius:5px;
+    height: 815px;
+    
+    
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(137, 136, 136);
+    font-size: 14px;
+    color: black;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.list p{
+    border: none;
+    border-radius: 20px;
+    background-color: #EFF6FF;
+    height: 40px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.bttn{
+    border: none;
+    width: 100%;
+    background: linear-gradient(to right, #2C73D2, #845EC2);
+    border-radius: 5px;
+    margin-top: 60px;
+    height: 40px;
+    color: white;
+    position: relative;
+    bottom: 230px;
+}
+
+.container{
+    margin-top: 20px;
+    background: red;
+    width: 100%;
+}
+.card{
+    height: 760px;
+    background: #ffffff;
+    
+}
+.card-body{
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+.card-body h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 75px;
+    width: 98%;
+}
+.user{
+    color: #ffffff;
+}
+h6{
+    color: black;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+    padding-left: 10px;
+}
+.name p{
+    position: relative;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    gap: 10px;
+}
+.name strong{
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 29px;
+}
+.col-md-1{
+    font-size: 14px;
+    height:400px;
+    
+}
+.card-top-pic{
+    position: relative;
+    bottom: 20px;
+}
+.card-topp{
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    background-color: white;
+}
+.card-topp2{
+    height:700px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: white;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.balance{
+    line-height: 5px;
+    background: #F3F3F4;
+    width: 150px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.profile-p{
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+.edit-b{
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 30px;
+    width: 120px;
+}
+.edit-b:hover{
+    background: linear-gradient(to right, #2C73D2, #845EC2);
+    color: #ffffff;
+}
+.address{
+    margin-left: 15px;
+    position: relative;
+    bottom: 60px;
+}
+.address h6{
+    font-size: 14px;
+}
+.edit-p{
+    position: relative;
+    bottom:2px;
+    right: 5px;
+}
+.social{
+    position: relative;
+    bottom: 35px;
+}
+.social img{
+    padding-left: 10px;
+}
+.cont{
+    display: flex;
+    gap: 10px;
+    color: #4378FF;
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.act{
+    border: 1px solid black;
+    font-size: 14px;
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    
+    
+}
+.act:hover{
+    background: linear-gradient(to right, #2C73D2, #845EC2);
+    color: #ffffff;
+}
+.act:active{
+    background: linear-gradient(to right, #2C73D2, #845EC2);
+    color: #ffffff;
+}
