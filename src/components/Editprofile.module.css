@@ -130,7 +130,7 @@ fieldset img{
     position: relative;
     bottom: 165px;
     right: 30px;
-    background-color: white;
+    background-color: rgb(41, 37, 37);
     height: 15px;
     width: 15px;
     border-radius: 10px;
@@ -162,4 +162,5 @@ fieldset img{
 }
 .card-img-top{
     border-radius: 5px 5px 0 0;
+    width: 100%;
 }
