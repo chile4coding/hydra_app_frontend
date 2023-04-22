@@ -13,28 +13,20 @@ import Stories from "../components/Stories";
 import Col from "react-bootstrap/Col";
 import HomeSidebar from "../components/HomeSidebar";
 import classes from "./Editprofile.module.css";
+import AppLayout from "../pages/AppLayout";
+import { Container } from "react-bootstrap";
 // import { Card, Button } from "react-bootstrap";
 // import cardpics from'./cardpics.svg';
 
 
 
 const Editprofile = () => (
-        <React.Fragment>
-            <div>
-                <HomeNavbar/>
-            </div>
-            <div className="container">
-                <div className="row">
-                    <div class="col-md-1" style={{width: '280px'}}>
-                        <Col md={12}>
-                            <HomeSidebar />
-                  
-                            <Stories>
-                                <SidebarMenu />
-                            </Stories>
-                        </Col>
-                    </div>
-                    <div className={`${classes["col-md-5"]}`} style={{width: '560px'}}>
+  
+        <AppLayout>
+            <Container>
+
+            
+              <div className={``} >
                         <h6>User Profile</h6>
                         <div className={`${classes["card"]}`}>
                             <img src={Landpics} className={`${classes["card-img-top"]}`} alt="pics"/>
@@ -74,12 +66,8 @@ const Editprofile = () => (
                             
                         </div>
                     </div>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-        </React.Fragment>
+                    </Container>
+        </AppLayout>
      );
 
  

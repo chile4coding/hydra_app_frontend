@@ -207,3 +207,6 @@ h6{
     background: linear-gradient(to right, #2C73D2, #845EC2);
     color: #ffffff;
 }
+.card-img-top{
+    width: 100%;
+}
