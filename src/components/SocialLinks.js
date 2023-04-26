@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import plus from '../icons/plus.svg';
-import dribble from '../icons/Dribbble.svg';
-import linked from '../icons/LinkedInCircled.svg';
+import add from '../icons/add.svg';
+import ball from '../icons/Dribbble.svg';
+import linkedin from '../icons/LinkedIncircled.svg';
 import Link from '../icons/Link.svg';
-import classes from './socialLinks.module.css';
+import deletes from '../icons/deletes.svg';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import classes from './SocialLinks.module.css';
 
 
 
@@ -18,7 +21,7 @@ function SocialLinks() {
   return (
     <>
 
-        <img src={plus}  onClick={handleShow} alt="add"/>
+        <img src={add}  onClick={handleShow} alt="add" className={`${classes['add-links']}`}/>
 
       <Modal
         show={show}
@@ -26,27 +29,48 @@ function SocialLinks() {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header>
-          <Modal.Title className={`${classes['M_title']}`}>Social Links</Modal.Title>
-        </Modal.Header>
-       
+        
+          <h2 className={`${classes['modal_title']}`}>Social Links</h2>
         <Modal.Body>
-        <p className={`${classes['body_para']}`}>Add your social links that will be visible on your profile</p>
+        <p  >Add your social links that will be visible on your profile</p>
         <div className="w-full max-w-xs">
           <form className="bg-white shadow-md rounded">
-            <div className="mb-4">
-              <h6 className={`${classes['body_h6']}`}>Add social Links</h6>
-              <div >
-                <img className={`${classes['img_drib']}`}  src={dribble}/>
-                <input className="border rounded w-70% py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id={`${classes["username"]}`} type="text"/>
+            <div  className="mb-4">
+              <h6 className={`${classes['para']}`}>Add social Links</h6>
+              <div>
+              <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1"><img src={ball} alt='dribble-icon'/></InputGroup.Text>
+                <Form.Control
+                  placeholder="https://dribble.com/malikazeez"
+                  aria-label="dribble"
+                  aria-describedby="basic-addon1"
+                />
+                <InputGroup.Text id="basic-addon1"><img src={deletes} alt='delete-icon'/></InputGroup.Text>
+              </InputGroup>
               </div>
               <div>
-                <img className={`${classes['img_drib']}`} src={linked}/>
-                <input className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id={`${classes["username"]}`} type="text"/>
+              <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1"><img src={linkedin} alt='linkedin-icon'/></InputGroup.Text>
+                <Form.Control
+                  placeholder="https://linkedin.com/malikazeez "
+                  aria-label="links"
+                  aria-describedby="basic-addon1"
+                />
+                <InputGroup.Text id="basic-addon1"><img src={deletes} alt='delete-icon'/></InputGroup.Text>
+              </InputGroup>
               </div>
-              
-              <img className={`${classes['img_drib']}`}  src={Link}/>
-              <input className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id={`${classes["username"]}`} type="text"/>
+              <div>
+              <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1"><img src={Link} alt='link-icon' /></InputGroup.Text>
+                <Form.Control
+                  placeholder="malikazeez.com"
+                  aria-label="Linkedin"
+                  aria-describedby="basic-addon1"
+                />
+                <InputGroup.Text id="basic-addon1"><img src={deletes} alt='delete-icon'/></InputGroup.Text>
+              </InputGroup>
+              </div>
+
             </div>
           </form>
         </div>
