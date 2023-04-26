@@ -129,6 +129,7 @@ fieldset img{
 .pen{
     position: relative;
     bottom: 165px;
+
     right: 6%;
     background-color: rgb(252, 252, 252);
     padding-top: 6px;
@@ -136,6 +137,12 @@ fieldset img{
     /* height: 20px;
     width: 20px; */
     border-radius: 44%;
+    right: 30px;
+    background-color: rgb(41, 37, 37);
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+
 }
 .pen2{
     position: relative;
@@ -169,4 +176,5 @@ fieldset img{
 .socials .SocialLinks{
     cursor: pointer;
 }
+
 

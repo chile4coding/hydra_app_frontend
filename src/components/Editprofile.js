@@ -14,6 +14,7 @@ import Col from "react-bootstrap/Col";
 import HomeSidebar from "../components/HomeSidebar";
 import classes from "./Editprofile.module.css";
 import AppLayout from "../pages/AppLayout";
+
 import { Container, Modal } from "react-bootstrap";
 import { Card, Button } from "react-bootstrap";
 import add from '../icons/add.svg';
