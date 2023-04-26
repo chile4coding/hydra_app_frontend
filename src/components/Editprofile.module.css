@@ -56,7 +56,7 @@ label{
     color: white;
     position: relative;
     bottom: 230px;
-    left: 115px;
+    left: 20%;
 }
 fieldset img{
     position: relative;
@@ -129,20 +129,29 @@ fieldset img{
 .pen{
     position: relative;
     bottom: 165px;
+
+    right: 6%;
+    background-color: rgb(252, 252, 252);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /* height: 20px;
+    width: 20px; */
+    border-radius: 44%;
     right: 30px;
     background-color: rgb(41, 37, 37);
     height: 15px;
     width: 15px;
     border-radius: 10px;
+
 }
 .pen2{
     position: relative;
-    bottom: 150px;
-    left: 500px;
+    bottom: 13%;
+    left: 95%;
     background-color: white;
-    height: 15px;
-    width: 15px;
-    border-radius: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 40%;
 }
 .span{
     position: relative;
@@ -164,3 +173,8 @@ fieldset img{
     border-radius: 5px 5px 0 0;
     width: 100%;
 }
+.socials .SocialLinks{
+    cursor: pointer;
+}
+
+

@@ -20,7 +20,11 @@ color: #727479;
     flex-basis: 2;
 }
 
-
+.show__tilte{
+    color: #000;
+    text-decoration: none;
+    text-underline-offset: none;
+}
 .home__search-input{
     width: 100%;
     background: #E7E8E9;
