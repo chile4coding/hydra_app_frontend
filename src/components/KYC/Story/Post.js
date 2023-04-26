@@ -29,11 +29,12 @@ function PostFooter(props) {
               backgroundColor: "#EFEFEF",
               padding: "0px 7px",
               borderRadius: "20px",
-             
             }}
-            className="d-flex align-items-start  " >
-            <span className={classes["currency__style"]} style={{width: '7.37px', height:'15.3px', padding: '0px'}}>
-              <img src={hifiIcon} alt="hifi icon" style={{width: '100%'}}/>{" "}
+            className="d-flex align-items-start  ">
+            <span
+              className={classes["currency__style"]}
+              style={{ width: "7.37px", height: "15.3px", padding: "0px" }}>
+              <img src={hifiIcon} alt="hifi icon" style={{ width: "100%" }} />{" "}
             </span>
             <span className={classes["amount"]}>0.478</span>
           </span>
@@ -56,9 +57,21 @@ function PostFooter(props) {
           <div classname={`${classes["KYC__inner-text"]} `}>
             <span>
               Pere, Jon and 500k person views{" "}
-              <span style={{position: 'relative', marginLeft:'8px'}}>
-                <img src={favourite} style={{ cursor: "pointer", zIndex: '0' } } />
-                <img src={like} style={{ cursor: "pointer",  position: 'absolute', top: '4px', right: '10px', zIndex:'1000'}} />
+              <span style={{ position: "relative", marginLeft: "8px" }}>
+                <img
+                  src={favourite}
+                  style={{ cursor: "pointer", zIndex: "0" }}
+                />
+                <img
+                  src={like}
+                  style={{
+                    cursor: "pointer",
+                    position: "absolute",
+                    top: "4px",
+                    right: "10px",
+                    zIndex: "1000",
+                  }}
+                />
               </span>
             </span>
           </div>

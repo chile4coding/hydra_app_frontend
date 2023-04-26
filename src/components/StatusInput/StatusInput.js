@@ -8,18 +8,18 @@ import { useState } from "react";
 import man from "../../images/man.jpg";
 import PostComponent from "../post/Post";
 import classes from "./StatusInput.module.css";
+import { Link } from "react-router-dom";
 
 function StatusInput() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = (e) => {
-    e.preventDefault();
-    setShow(true);
-  };
+  // const handleClose = () => setShow(false);
+  // const handleShow = (e) => {
+  //   e.preventDefault();
+  //   setShow(true);
+  // };
   return (
     <>
-      <PostComponent handleClose={handleClose} show={show} />
       <Card className={`${classes["card__display--desktop"]} mb-4`}>
         <Card.Body className="d-flex align-items-start gap-2">
           <div
@@ -63,9 +63,9 @@ function StatusInput() {
                 </div>
                 <div className={classes["mobile__view"]}>
                   <button
-                    className={`btn btn-primary ${classes["button__style"]}`}
-                    onClick={handleShow}>
-                    Post
+                    className={`btn btn-primary ${classes["button__style"]}`}>
+                    <Link to="/make-post"> Post</Link>
+                   
                   </button>
                 </div>
               </div>

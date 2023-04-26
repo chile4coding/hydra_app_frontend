@@ -36,7 +36,6 @@ const Me = () => (
         <Container>
 
      
-        <div className={`${classes["col-md-5"]}`}>
 
         <div className={`${classes["col-md-5"]}`} style={{ width: '560px' }}>
             <h6 className={`${classes["user"]}`}>User Profile</h6>

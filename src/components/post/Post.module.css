@@ -1,0 +1,38 @@
+.post_container{
+    
+background-color: #8C8C8C;
+padding: 1em 7px;
+border-radius: 5px 5px 0 0;
+
+
+}
+.post__span{
+/* border-bottom: 2px solid;
+
+border-image: linear-gradient(90deg, #2C73D2 1.15%, #845EC2 94.84%); */
+border-bottom: 2px solid transparent;
+border-image: linear-gradient(90deg, #2C73D2 1.15%, #845EC2 94.84%);
+border-image-slice: 1;
+font-size: 16px;
+
+
+}
+.close__button{
+    color: #000000;
+    opacity: 0.5;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.text__area{
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    
+}
+.post__body{
+   
+    background: linear-gradient(49deg, rgba(255, 255, 255, 1) 35%, rgba(245, 245, 245, 1) 88%, rgba(171,183,255,1) 100%)
+
+}

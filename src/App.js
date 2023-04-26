@@ -4,6 +4,7 @@ import Homepage from "./pages/homepage";
 import Me from './pages/Me';
 import Editprofile from './components/Editprofile';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PostComponent from './components/post/Post';
 //import HomeNavbar from './components/HomeNavbar';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Route path='message' element= {<Message/>}/> */}
             <Route path='/me' element={<Me/>}/>
             <Route path='/editprofile' element={<Editprofile/>}/>
+            <Route path='/make-post' element={<PostComponent/>}/>
           </Routes>
         </BrowserRouter>
     </div>

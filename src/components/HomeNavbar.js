@@ -145,11 +145,6 @@ function HomeNavbar() {
     </div>
   );
 }
-//  <p>Me</p>
-{
-  /* <i className={classes["home__icon-holder"]}>
-  <img src={dropdownIcon} alt="Hyra Logo" className="image-fluid" />
-</i>; */
-}
+
 
 export default HomeNavbar;
