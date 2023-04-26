@@ -1,7 +1,5 @@
 import React from "react";
 import Landpics from "../images/rectangle.svg";
-//import './index.css';
-//import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Ppics from '../images/pp.svg';
 import pen from '../icons/Vectorpen.svg';
 import ball from '../icons/ball.svg';
