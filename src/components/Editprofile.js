@@ -12,8 +12,11 @@ import Col from "react-bootstrap/Col";
 import HomeSidebar from "../components/HomeSidebar";
 import classes from "./Editprofile.module.css";
 import AppLayout from "../pages/AppLayout";
-import { Container } from "react-bootstrap";
-// import { Card, Button } from "react-bootstrap";
+
+import { Container, Modal } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+import add from '../icons/add.svg';
+import SocialLinks from "./SocialLinks";
 // import cardpics from'./cardpics.svg';
 
 
@@ -55,6 +58,7 @@ const Editprofile = () => (
                                             <img src={ball} alt="ball" />
                                             <img src={links} alt="links" />
                                             <img src={linkedin} alt="linkedin" />
+                                            <SocialLinks className={`${classes["SocialLinks"]}`}/>
                                         </div>
                                     </div>
                                     <button className={`${classes["bttn"]}`}>Proceed</button>
